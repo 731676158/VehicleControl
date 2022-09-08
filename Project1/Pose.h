@@ -25,7 +25,6 @@ public:
 class refPos
 {
 public:
-	refPos() = default;
 	void setfun(function<double(double)>& fun, int x_rg);
 	double refposition(double pos_x, double pos_y);   //ªπŒ¥∂®“Â
 public:
@@ -44,7 +43,7 @@ private:
 class Pose
 {
 public:
-	Pose(double x = 0,double y = 5,double yaw = 0,double velo = 10.0,double del = 0)
+	Pose(double x = 0,double y = 2,double yaw = 0.5,double velo = 10.0,double del = 0)
 	{
 		pos_x = x;
 		pos_y = y;

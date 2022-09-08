@@ -143,13 +143,17 @@
     <ClCompile Include="graph2d.cpp" />
     <ClCompile Include="LQR.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MPC.cpp" />
+    <ClCompile Include="MPC.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Pose.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="graph2d.h" />
     <ClInclude Include="LQR.h" />
-    <ClInclude Include="MPC.h" />
+    <ClInclude Include="MPC.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="Pose.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
