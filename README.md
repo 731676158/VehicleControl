@@ -1,0 +1,3 @@
+# VehicleControl
+基于车辆运动学模型的LQR、MPC轨迹跟踪控制
+MPC的部分没有写完因为不是很会用OSQP求解器，之后有机会补上
